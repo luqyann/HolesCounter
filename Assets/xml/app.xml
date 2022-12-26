@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<box width="100%" height="100%">
+	<style>
+		#label {
+			font-size:32px;
+		}
+		#box {
+			clip:true;
+		}
+		#canvas_box {
+			clip:false;
+		}
+	</style>
+	<vbox  horizontalAlign="center" verticalAlign="center">
+		<grid columns="5">
+			<button text="۞" onClick="textfield.text += this.text"/>
+			<button text="ꭂ" onClick="textfield.text += this.text"/>
+			<button text="۝" onClick="textfield.text += this.text"/>
+			<button text="۩" onClick="textfield.text += this.text"/>
+		</grid>
+		<textfield id="textfield" text="" placeholder="Введите символ" />
+		<hbox>
+			<label text="Размер шрифта"/>
+			<number-stepper id="font_size_stepper" pos="128" step="4" min="12" max="256" />
+		</hbox>
+		<box id="box" width="0" height="0">
+			<label id="label"/>
+		</box>
+
+		<label id="result_label"/>
+		<label id="timing_label"/>
+		<box id="canvas_box" width="0" height="0">
+			<image id="canvas" horizontalAlign="center"/>
+		</box>
+	</vbox>
+
+</box>
