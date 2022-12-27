@@ -9,7 +9,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		Toolkit.scale = 2;
+		Toolkit.scale = 1;
 		var app = new HaxeUIApp();
 		app.ready(() -> {
 			app.addComponent(App.app);
